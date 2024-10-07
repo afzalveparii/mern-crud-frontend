@@ -149,7 +149,7 @@ const Register = () => {
       setUseradd(response.data);
       navigate("/");
     } else {
-      toast.error("Error!");
+      toast.error("This user already exists in our database");
     }
   };
 
