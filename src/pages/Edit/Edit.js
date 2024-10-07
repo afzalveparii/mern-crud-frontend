@@ -99,7 +99,7 @@ const Edit = () => {
 
     if (!inputdata.email) {
       validationErrors.email = 'Email Address is required';
-    }else if (!emailRegex.test(inputdata.lname)) {
+    }else if (!emailRegex.test(inputdata.email)) {
         validationErrors.email = 'Invalid Email Address !';
     }
 
