@@ -113,10 +113,6 @@ const Edit = () => {
       validationErrors.gender = 'Gender is required';
     }
 
-    if (!image) {
-      validationErrors.user_profile = 'Profile image is required';
-    }
-
     if (!inputdata.address) {
       validationErrors.address = 'Address is required';
     }else if (!addressRegex.test(inputdata.address)) {
