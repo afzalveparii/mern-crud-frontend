@@ -34,6 +34,34 @@ const Home = () => {
     navigate("/register")
   }
 
+  useEffect(() => {
+    if (useradd) {
+      const timer = setTimeout(() => {
+        setUseradd("");
+      }, 3000);
+      return () => clearTimeout(timer); 
+    }
+  }, [useradd, setUseradd]);
+
+  useEffect(() => {
+  
+    if (update) {
+      const timer = setTimeout(() => {
+        setUpdate("");
+      }, 3000);
+      return () => clearTimeout(timer); 
+    }
+  }, [setUpdate, update]);
+
+  useEffect(() => {
+
+    if (deletedata) {
+      const timer = setTimeout(() => {
+        setDLtdata("");
+      }, 3000);
+      return () => clearTimeout(timer); 
+    }
+  }, [deletedata, setDLtdata]);
   // get user
   const userGet = async()=>{
     const response = await usergetfunc(search,gender,status,sort,page);

@@ -51,7 +51,7 @@ const Tables = ({ userdata, deleteUser, userGet, handlePrevious, handleNext, pag
                         <>
                           <tr>
                             <td>{index + 1 + (page - 1)*4}</td> 
-                            <td>{element.fname + element.lname}</td>
+                            <td>{element.fname +" "+ element.lname}</td>
                             <td>{element.email}</td>
                             <td>{element.address}</td>
                             <td>{element.phoneNumber}</td>
